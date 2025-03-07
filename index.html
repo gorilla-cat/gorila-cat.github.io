@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>脚本検索サイト</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <h3>メニュー</h3>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="scripts.html">脚本一覧</a></li>
+            <li><a href="contact.html">使用依頼・お問い合わせ</a></li> <!-- お問い合わせページへリンク -->
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeQ9Mx9dUcGEvGwKi9GL4VSY_r493a4lZM9TAG7s1KLunvDuA/viewform" target="_blank">
+                Googleフォームで開く
+            </a></li> <!-- 別タブでGoogleフォームを開く -->
+        </ul>
+        <div class="sidebar-links">
+            <a href="リンク先URL1" target="_blank">はり子のとらの穴リンク</a>
+            <a href="リンク先URL2" target="_blank">Xアカウント</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>脚本一覧</h1>
+        <div class="filters">
+            <label>上演時間:</label>
+            <select id="timeFilter">
+                <option value="">すべて</option>
+                <option value="15">~15分</option>
+                <option value="30">~30分</option>
+                <option value="50">~50分</option>
+                <option value="60">60分</option>
+            </select>
+            
+            <label>男性キャスト:</label>
+            <select id="maleFilter">
+                <option value="">すべて</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4~</option>
+            </select>
+            
+            <label>女性キャスト:</label>
+            <select id="femaleFilter">
+                <option value="">すべて</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4~</option>
+            </select>
+            
+            <label>ジャンル:</label>
+            <select id="genreFilter">
+                <option value="">すべて</option>
+                <option value="青春">青春</option>
+                <option value="コメディ">コメディ</option>
+                <option value="感動">感動</option>
+                <option value="ホラー">ホラー</option>
+            </select>
+            
+            <label>上演人数:</label>
+            <select id="castFilter">
+                <option value="">すべて</option>
+                <option value="3">~3人</option>
+                <option value="4">4人</option>
+                <option value="5">5人</option>
+                <option value="6">6人~</option>
+            </select>
+            
+            <label>並べ替え:</label>
+            <select id="sortOrder">
+                <option value="asc">昇順</option>
+                <option value="desc">降順</option>
+            </select>
+            
+            <button id="searchButton">検索</button>
+            <div id="scriptList"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
